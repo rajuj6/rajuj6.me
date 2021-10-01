@@ -1,87 +1,103 @@
 .ui-app {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 
-    // logo (header)
-    &__logo {
-        font-size: 50px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 20px 0;
-        letter-spacing: 2px;
-    }
+  // logo (header)
+  &__logo {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 20px 0;
+	letter-spacing: 2px;
+  }
 
-    // navigation
-    &__nav {
-        display: flex;
-        justify-content: center;
+  // navigation
+  &__nav {
+	display: flex;
+	justify-content: center;
 
-        &__item {
-            flex: 0 0 auto;
-            padding: 5px 5px;
-            margin: 0 5px;
-            font-size: 12px;
-            text-transform: uppercase;
-            font-weight: 500;
-            letter-spacing: 1px;
+	&__item {
+	  flex: 0 0 auto;
+	  padding: 5px 5px;
+	  margin: 0 5px;
+	  font-size: 12px;
+	  text-transform: uppercase;
+	  font-weight: 500;
+	  letter-spacing: 1px;
 
-            &--active {
-                border-bottom: 1px solid #666;
-            }
-        }
-    }
+	  &--active {
+		border-bottom: 1px solid #666;
+	  }
+	}
+  }
 
-    // routes
-    &__routes {
-        margin-top: 30px;
-    }
+  // routes
+  &__routes {
+	margin-top: 30px;
+  }
 
-    // footer
-    &__footer {
-        margin-top: 100px;
-        border-top: 1px solid #eee;
-        padding: 20px 10px;
+  // footer
+  &__footer {
+	margin-top: 100px;
+	border-top: 1px solid #eee;
+	padding: 20px 10px;
 
-        &__links {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
+	&__links {
+	  display: flex;
+	  justify-content: center;
+	  margin: 10px 0;
 
-            &__link {
-                flex: 0 0 auto;
-                display: flex;
-                margin: 0 20px;
-                font-size: 11px;
-                text-transform: uppercase;
-                font-weight: 500;
-                letter-spacing: 0.5px;
-                color: #999;
-            }
-        }
+	  &__link {
+		flex: 0 0 auto;
+		display: flex;
+		margin: 0 20px;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		color: #999;
+	  }
+	}
 
-        &__source-code {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0 10px;
+	&__source-code {
+	  display: flex;
+	  justify-content: center;
+	  margin: 20px 0 10px;
 
-            &__link {
-                flex: 0 0 auto;
-                display: flex;
-                margin: 0 10px;
-                font-size: 10px;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-                color: #999;
-            }
-        }
-    }
+	  &__link {
+		flex: 0 0 auto;
+		display: flex;
+		margin: 0 10px;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: #999;
+	  }
+	}
+  }
+}
+
+.ui-mode-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  button {
+	cursor: pointer;
+  }
 }
 
 .dark {
   .ui-app {
 	&__footer {
 	  border-top-color: #5b5c5d;
+	}
+  }
+  .ui-mode-switch {
+	svg {
+	  path {
+		fill: white;
+	  }
 	}
   }
 }

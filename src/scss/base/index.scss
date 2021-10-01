@@ -4,9 +4,13 @@
 // application top-level styles here
 html,
 body {
-    font-size: 10px;
-    font-family: $font-primary;
-    background-color: #fafafa;
+  font-size: 10px;
+  font-family: $font-primary;
+  background-color: #fafafa;
+  -webkit-transition: background-color 500ms linear, color 500ms linear;
+  -ms-transition: background-color 500ms linear, color 500ms linear;
+  transition: background-color 500ms linear, color 500ms linear;
+
   &.dark {
 	background-color: #202124;
 	color: #ffffff;
