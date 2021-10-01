@@ -1,0 +1,35 @@
+@import '~scss-global';
+
+.ui-about {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__avatar {
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+
+        &__img {
+            width: 250px;
+        }
+    }
+
+    &__bio {
+        margin-top: 30px;
+        flex: 0 0 auto;
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    &__request-cv {
+        @include ui-button;
+        margin-top: 50px;
+        flex: 0 0 auto;
+        display: block;
+    }
+}

@@ -1,0 +1,21 @@
+[{
+	"id": "acquire",
+	"title": "Acquire",
+	"description": "The Conversational Customer Experience Platform - Acquire.",
+	"url": "https://acquire.io"
+}, {
+	"id": "just-total-tech",
+	"title": "Just Total Tech",
+	"description": "Technology & Innovation Insights",
+	"url": "https://justtotaltech.com/"
+}, {
+	"id": "acquire-sdk",
+	"title": "AcquireIO SDK",
+	"description": "Repository of Cocoapods which are ad-hoc/beta releases of the AcquireIO frontend bundle iOS SDK.",
+	"url": "https://github.com/acquireio/AcquireIO-Core"
+}, {
+	"id": "acquire-ios-app",
+	"title": "AcquireIO iOS App",
+	"description": "Chat & Co-browse with customer iOS agent app.",
+	"url": "https://apps.apple.com/us/app/acquire-chat/id1454370786#?platform=iphone"
+}]

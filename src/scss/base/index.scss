@@ -1,0 +1,14 @@
+// import reset css
+@import 'reset';
+
+// application top-level styles here
+html,
+body {
+    font-size: 10px;
+    font-family: $font-primary;
+    background-color: #fafafa;
+  &.dark {
+	background-color: #202124;
+	color: #ffffff;
+  }
+}
