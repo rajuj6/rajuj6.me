@@ -17,11 +17,11 @@ export const AppComponent = ( props ) => {
 		<div className="ui-app">
 			<div className="ui-mode-switch">
 				<button onClick={() => {
-					const value = 'dark' === props.mode ? 'light' : 'dark';
+					const value = ( 'dark' === props.mode || '' === props.mode || null === props.mode ) ? 'light' : 'dark';
 					props.updateUIMode( value );
 				}} type="button" title="Use light theme"><span>
 
-					{'dark' === props.mode ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+					{'dark' === props.mode || '' === props.mode || null === props.mode ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
 							{/* eslint-disable-next-line no-mixed-spaces-and-tabs */}
 						  <path d="M6.995 12C6.995 14.761 9.241 17.007 12.002 17.007C14.763 17.007 17.009 14.761 17.009 12C17.009 9.239 14.763 6.993 12.002 6.993C9.241 6.993 6.995 9.239 6.995 12ZM11 19H13V22H11V19ZM11 2H13V5H11V2ZM2 11H5V13H2V11ZM19 11H22V13H19V11Z" fill="#333" />
 							{/* eslint-disable-next-line no-mixed-spaces-and-tabs */}
