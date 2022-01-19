@@ -9,10 +9,11 @@ const setModeInStore = ( value ) => {
 };
 
 export const getModeInStore = () => {
-	let value = 'dark';
+	let value = 'light';
 	if ( window && window.localStorage ) {
-		value = window.localStorage.getItem( STORE_KEY );
+		value = window.localStorage.getItem( STORE_KEY ) || value;
 	}
+
 	updateBodyClass( value );
 	return value;
 };

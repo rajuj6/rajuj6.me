@@ -10,9 +10,65 @@ body {
   -webkit-transition: background-color 500ms linear, color 500ms linear;
   -ms-transition: background-color 500ms linear, color 500ms linear;
   transition: background-color 500ms linear, color 500ms linear;
+  color: #333;
 
   &.dark {
 	background-color: #202124;
 	color: #ffffff;
+
+	.ui-about__bg {
+	  display: none;
+	}
+
+	.ui-about__block__content li a {
+	  background-image: linear-gradient(180deg, transparent 90%, #fff 0);
+	}
   }
 }
+
+h1, h2, h3 {
+  font-family: "Alegreya", serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1.8rem;
+}
+
+p, li {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+figure {
+  margin: 0;
+  box-shadow: 10px 10px 30px 0 rgba(30, 30, 30, 0.2);
+  vertical-align: top;
+  display: inline-block;
+
+  img {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  }
+}
+
+nav a, p a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  background-image: linear-gradient(180deg, transparent 90%, black 0);
+  transition: all .2s;
+}
+
