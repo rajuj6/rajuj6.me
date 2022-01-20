@@ -60,10 +60,18 @@ export const AppComponent = ( props ) => {
 			{/* footer */}
 			<div className="ui-app__footer">
 				<div className="ui-app__footer__links">
-					<a className="ui-app__footer__links__link" href="https://medium.com/@rajuj6" target="_blank">Medium</a>
-					<a className="ui-app__footer__links__link" href="https://github.com/rajuj6" target="_blank">GitHub</a>
-					<a className="ui-app__footer__links__link" href="https://twitter.com/rajuj6" target="_blank">Twitter</a>
-					<a className="ui-app__footer__links__link" href="https://instagram.com/rajuj6" target="_blank">Instagram</a>
+					<a className="ui-app__footer__links__link link-medium" href="https://medium.com/@rajuj6" target="_blank">
+						<span className="link-icon"/>
+						<span className="link-title">Medium</span></a>
+					<a className="ui-app__footer__links__link link-github" href="https://github.com/rajuj6" target="_blank">
+						<span className="link-icon"/>
+						<span className="link-title">GitHub</span></a>
+					<a className="ui-app__footer__links__link link-twitter" href="https://twitter.com/rajuj6" target="_blank">
+						<span className="link-icon"/>
+						<span className="link-title">Twitter</span></a>
+					<a className="ui-app__footer__links__link link-instagram" href="https://instagram.com/rajuj6" target="_blank">
+						<span className="link-icon"/>
+						<span className="link-title">Instagram</span></a>
 				</div>
 
 				<div className="ui-app__footer__source-code">

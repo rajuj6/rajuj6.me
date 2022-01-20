@@ -26,6 +26,12 @@ body {
   }
 }
 
+body {
+  @media(max-width: 839px) {
+	padding: 0 20px;
+  }
+}
+
 h1, h2, h3 {
   font-family: "Alegreya", serif;
   margin: 0;

@@ -30,6 +30,10 @@
 	margin: 0;
 	padding: 80px 0 60px;
 
+	@media(max-width: 839px) {
+	  padding-top: 0;
+	}
+
 	&__bio, &__contact {
 	  li {
 		position: relative;
@@ -95,12 +99,21 @@
 	margin: 0 auto;
 	position: relative;
 
+	@media(max-width: 839px) {
+	  width: 100%;
+	}
+
 	&__content {
 	  position: relative;
 	  width: 57%;
 	  display: inline-block;
 	  margin: 0;
 	  padding-right: 40px;
+
+	  @media(max-width: 839px) {
+		width: 100%;
+		padding-right: 0;
+	  }
 
 	  .page-title {
 		span {
@@ -129,6 +142,9 @@
 
 	figure {
 	  width: 42%;
+	  @media(max-width: 839px) {
+		display: none;
+	  }
 	}
 
 	h1 {
@@ -159,7 +175,7 @@
 
   &__request-cv {
 	@include ui-button;
-	margin-top: 50px;
+	margin-top: 40px;
 	flex: 0 0 auto;
 	display: block;
   }

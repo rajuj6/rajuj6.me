@@ -47,7 +47,7 @@ export const AboutView = () => {
 							<li>if we have shared interests, follow me on <a
 								href="https://twitter.com/rajuj6">Twitter</a></li>
 						</ul>
-						<h2>Lets meet in person</h2>>
+						<h2>Lets meet in person</h2>
 						<p>I highly value learning - I love finding people, teams and organisations to learn from
 							and help so get in touch.</p>
 

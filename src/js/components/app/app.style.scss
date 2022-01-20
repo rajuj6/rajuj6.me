@@ -17,6 +17,10 @@
 	  height: 1px;
 	  position: relative;
 	  margin: 0 auto;
+
+	  @media(max-width: 839px) {
+		width: 100%;
+	  }
 	}
 
 	&__2 {
@@ -68,24 +72,135 @@
 
   // footer
   &__footer {
-	margin-top: 100px;
+	margin-top: 40px;
 	border-top: 1px solid #eee;
 	padding: 20px 10px;
+
+	&__message {
+	  font-size: 1.4rem;
+	  display: inline-block;
+	}
 
 	&__links {
 	  display: flex;
 	  justify-content: center;
 	  margin: 10px 0;
 
+	  @media(max-width: 839px) {
+		flex-direction: column;
+		align-items: center;
+	  }
+
 	  &__link {
 		flex: 0 0 auto;
 		display: flex;
-		margin: 0 20px;
-		font-size: 11px;
+		margin-right: 5px;
+		font-size: 14px;
 		text-transform: uppercase;
-		font-weight: 500;
+		font-weight: bold;
 		letter-spacing: 0.5px;
-		color: #999;
+		line-height: 1.3em;
+
+		@media(max-width: 839px) {
+		  margin-bottom: 16px;
+		  &:before {
+			display: none;
+		  }
+
+		  .link-icon {
+			margin-right: 12px !important;
+		  }
+
+		  .link-title {
+			width: 74px;
+		  }
+		}
+
+		&:first-child {
+		  &:before {
+			display: none;
+		  }
+		}
+
+		&:hover {
+		  color: #0077b5;
+		}
+
+		&:before {
+		  content: "|";
+		  padding-right: 5px;
+		  box-sizing: inherit;
+		  color: rgba(0, 0, 0, .1);
+		}
+
+		.link-icon {
+		  width: 16px;
+		  height: 16px;
+		  display: inline-block;
+		  position: relative;
+		  background-color: rgba(0, 0, 0, .3);
+		  margin-right: 4px;
+		}
+
+		&.link-medium {
+		  &:hover {
+			color: #76732d;
+
+			.link-icon {
+			  background-color: #76732d;
+			}
+		  }
+
+		  .link-icon {
+			mask-image: url(/assets/icons/medium.svg);
+			-webkit-mask-image: url(/assets/icons/medium.svg);
+		  }
+		}
+
+		&.link-github {
+		  &:hover {
+			color: #ab5010;
+
+			.link-icon {
+			  background-color: #ab5010;
+			}
+		  }
+
+		  .link-icon {
+			mask-image: url(/assets/icons/github.svg);
+			-webkit-mask-image: url(/assets/icons/github.svg);
+		  }
+		}
+
+		&.link-twitter {
+		  &:hover {
+			color: #0077b5;
+
+			.link-icon {
+			  background-color: #0077b5;
+			}
+		  }
+
+		  .link-icon {
+			mask-image: url(/assets/icons/twitter.svg);
+			-webkit-mask-image: url(/assets/icons/twitter.svg);
+		  }
+		}
+
+		&.link-instagram {
+		  &:hover {
+			color: #8a3ab9;
+
+			.link-icon {
+			  background-color: #8a3ab9;
+			}
+		  }
+
+		  .link-icon {
+			mask-image: url(/assets/icons/instagram.svg);
+			-webkit-mask-image: url(/assets/icons/instagram.svg);
+		  }
+		}
 	  }
 	}
 
