@@ -36,7 +36,7 @@ export const AppComponent = ( props ) => {
 			</div>
 			{/* logo/header */}
 			<div className="ui-app__logo">
-				<h1><span>Raju Ram</span></h1>
+				<h1><span>✨Raju Ram✨</span></h1>
 			</div>
 
 			{/* navigation */}
