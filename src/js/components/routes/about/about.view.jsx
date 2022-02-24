@@ -27,7 +27,7 @@ export const AboutView = () => {
 
 					</div>
 					<figure>
-						<img src="/assets/images/raju-info.png" alt="Raju Ram Bio"/>
+						<img src="/assets/images/raju-info-gs.png" alt="Raju Ram Bio"/>
 					</figure>
 				</div>
 			</div>
@@ -53,7 +53,7 @@ export const AboutView = () => {
 
 					</div>
 					<figure>
-						<img src="/assets/images/contact.png"/>
+						<img src="/assets/images/contact-gs.png"/>
 					</figure>
 				</div>
 			</div>
