@@ -19,7 +19,7 @@ spec:
         - image: rajuj6/intro
           name: rajuj6
           ports:
-            - containerPort: 5292
+            - containerPort: 80
           resources: {}
       restartPolicy: Always
 
@@ -32,9 +32,9 @@ metadata:
   name: rajuj6
 spec:
   ports:
-    - name: "5292"
-      port: 5292
-      targetPort: 5292
+    - name: "80"
+      port: 80
+      targetPort: 80
   selector:
     app: rajuj6
   type: NodePort
