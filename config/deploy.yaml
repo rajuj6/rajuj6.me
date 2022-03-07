@@ -1,31 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.service.type: nodeport
-    kompose.version: 1.26.0 (40646f47)
   labels:
-    io.kompose.service: rajume
-  name: rajume
+    app: rajuj6
+  name: rajuj6
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: rajume
+      app: rajuj6
   strategy: {}
   template:
     metadata:
-      annotations:
-        kompose.cmd: kompose convert -f docker-compose.yml
-        kompose.service.type: nodeport
-        kompose.version: 1.26.0 (40646f47)
       labels:
-        io.kompose.service: rajume
+        app: rajuj6
     spec:
       containers:
         - image: rajuj6/intro
-          name: rajume
+          name: rajuj6
           ports:
             - containerPort: 5292
           resources: {}
@@ -35,19 +27,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    kompose.cmd: kompose convert -f docker-compose.yml
-    kompose.service.type: nodeport
-    kompose.version: 1.26.0 (40646f47)
   labels:
-    io.kompose.service: rajume
-  name: rajume
+    app: rajuj6
+  name: rajuj6
 spec:
   ports:
     - name: "5292"
       port: 852920
       targetPort: 5292
   selector:
-    io.kompose.service: rajume
+    app: rajuj6
   type: NodePort
 
