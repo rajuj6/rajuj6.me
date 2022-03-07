@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-rajuj6
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: rajuj6-intro
+          image: rajuj6/intro:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rajuj6-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    app: app-rajuj6
+  ports:
+    - port: 5292
+      targetPort: 5292
+      nodePort: 30001
