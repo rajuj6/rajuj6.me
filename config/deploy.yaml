@@ -33,7 +33,7 @@ metadata:
 spec:
   ports:
     - name: "5292"
-      port: 852920
+      port: 5292
       targetPort: 5292
   selector:
     app: rajuj6
