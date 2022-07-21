@@ -29,7 +29,7 @@ export const PostsView = ( props ) => {
             {/* posts list */}
             <div className='ui-posts__list'>
                 {
-                    filteredPosts.records.map( project => {
+                    filteredPosts.map( project => {
                         return (
                             <a key={ project.title } href={ project.url } target='_blank' className='ui-posts__list__item'>
                                 <div className='ui-posts__list__item__title'>{ project.title }</div>
@@ -41,7 +41,7 @@ export const PostsView = ( props ) => {
             </div>
 
             {/* explore more */}
-            <a className='ui-posts__explore' target='_blank' href='http://medium.com/@rajuj6'>
+            <a className='ui-posts__explore' target='_blank' href='https://medium.com/@rajuj6'>
                 Explore More
             </a>
         </div>

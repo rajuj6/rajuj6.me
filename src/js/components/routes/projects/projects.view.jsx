@@ -21,7 +21,7 @@ export const ProjectsView = ( props ) => {
             </div>
 
             {/* explore more */}
-            <a className='ui-projects__explore' target='_blank' href='http://github.com/rajuj6'>
+            <a className='ui-projects__explore' target='_blank' href='https://github.com/rajuj6'>
                 Explore More
             </a>
         </div>
