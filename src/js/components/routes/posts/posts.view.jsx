@@ -6,7 +6,7 @@ import Loader from 'react-loader-spinner';
 export const PostsView = ( props ) => {
 
     // filter posts
-    const filteredPosts = isEmpty( props.selectedTopic ) ? props.posts : filter( props.posts, post => {
+    const filteredPosts = isEmpty( props.selectedTopic ) ? props.posts.record : filter( props.posts.record, post => {
         return includes( post.languages, props.selectedTopic );
     } );
 
@@ -29,7 +29,7 @@ export const PostsView = ( props ) => {
             {/* posts list */}
             <div className='ui-posts__list'>
                 {
-                    filteredPosts.map( project => {
+                    filteredPosts.records.map( project => {
                         return (
                             <a key={ project.title } href={ project.url } target='_blank' className='ui-posts__list__item'>
                                 <div className='ui-posts__list__item__title'>{ project.title }</div>

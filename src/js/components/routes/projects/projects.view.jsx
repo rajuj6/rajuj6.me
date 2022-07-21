@@ -9,7 +9,7 @@ export const ProjectsView = ( props ) => {
             {/* projects list */}
             <div className='ui-projects__list'>
                 {
-                    props.projects.map( project => {
+                    props.projects.record.map( project => {
                         return (
                             <a key={ project.id } href={ project.url } target='_blank' className='ui-projects__list__item'>
                                 <div className='ui-projects__list__item__title'>{ project.title }</div>
