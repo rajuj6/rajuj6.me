@@ -18,5 +18,24 @@
 
     <!-- react application -->
     <div id="app"></div>
+	<!--  Widget Code -->
+	<script type="text/javascript">((function(){
+		var load=function(){
+			var script="https://s.acquire.io/a-7f27b/init.js?full";
+			var x=document.createElement('script');
+			x.src=script;x.async=true;
+			var sx=document.getElementsByTagName('script')[0];
+			sx.parentNode.insertBefore(x, sx);
+
+		};
+		if(document.readyState === "complete")
+			load();
+		else if (window.addEventListener)
+			window.addEventListener('load',load,false);
+		else if (window.attachEvent) {
+			window.attachEvent("onload", load);
+		}
+	})())</script>
+	<!-- / Widget Code -->
 <script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>
