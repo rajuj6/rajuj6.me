@@ -13,7 +13,7 @@ export const AboutView = () => {
 					<div className="ui-about__bg ui-about__bg__2" />
 					<div className="ui-about__block__content">
 						<h1 className="page-title"><span>Hi, I'm Raju</span></h1>
-						<p>I am a full-stack web developer and general-purpose software developer with a vision to build easy-to-use and easy-to-maintain applications. </p>
+						<p>I am a full-stack tech and general-purpose software developer with a vision to build easy-to-use and easy-to-maintain applications. </p>
 						<p>Professional software development with 10+ years of experience bringing products from concept
 							to release in a variety of environments and companies. My biggest strengths are Backend, Big Data, APIs, Web, Bots, Microservices, Cloud. I am passionate about developing products that simplify our lives.</p>
 						<h2>Things I care about</h2>
